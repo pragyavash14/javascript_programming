@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Pragya Vashishtha">
+    <meta name="description" content="Portfolio Website of Pragya Vashishtha, a postgraduate student of Interactive Digital Media at Trinity College Dublin.">
+    <meta name="keywords" content="IDM, TCD, Graphic Design, masters">
+    <title>Pragya Vashishtha - About</title>
+    <link rel="stylesheet" type="text/css" href="style/stylesheet.css" />
+</head>
+
+<!-- header -->
+<body class="body-text">
+    <div id="container">
+        <span id="title"> <a  href="/">Pragya's Shop</a> </span>
+        <!-- <span> <a class="navigation_page_names hidden" href="contact.html">Contact</a> </span> -->
+        <span> <a class="navigation_page_names " href="/about">About</a> </span> 
+        <span> <a class="navigation_page_names" href="/products">Products</a> </span>
+    </div>
+    <div id="content-top"> 
+        <form action="/logout" method="GET">
+            <button class=button type="submit">Logout</button>
+        </form>
+    </div>
+
+        <div id="content">
+            <p class="big-text">Welcome, <%= uname %>!</p>
+            <!-- <img class="picture" src="/images/pragya2.jpg" alt="A formal portrait photograph of Pragya"> -->
+            <p>You have succesfully logged in. <br> <br>
+                <p >Name: <%= fname %>  <%= lname %></p>
+                <p>Address: <%= add %> </p>
+            <a href="upload.html"> Upload a file </a>
+            </p>
+            
+        </div>
+
+
+        <div id="footer">
+            <p>Follow me on: <a  href="https://www.linkedin.com/in/pragya-vashishtha-81ba20a7/" target="_blank"><img class="icons" src="/images/linkedin.svg" alt="Linkedin icon image"></a> 
+                             <a  href="https://www.behance.net/pragyavash" target="_blank"><img class="icons" src="/images/behance.svg" alt="Behance icon image"></a>    
+            </p>
+        </div>
+</body>
+</html>

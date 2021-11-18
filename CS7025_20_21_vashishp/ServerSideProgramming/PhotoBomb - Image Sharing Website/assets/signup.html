@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="Author" content="Pragya Vashishtha">
+    <meta name="description"
+        content="Photobomb is a image sharing website created by Pragya Vashishtha, a postgraduate student of Interactive Digital Media at Trinity College Dublin.">
+    <meta name="keywords" content="IDM, TCD,Design, webshop, art, paintings, image sharing">
+    <title>Sign Up | Photobomb</title>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/style/stylesheet.css" />
+      <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <!-- Bootstrap js for some styles-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+</head>
+
+<!-- header -->
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="/">Photobomb</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+    <!-- blah -->
+    <li class="text-success">| Sign Up |</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="content" class="container">
+            <h1 class="mb-5 mt-5">Sign up</h1>
+            <form action="/signup" method="POST" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <label>First Name:</label>
+                    <input type="text" class="form-control"  name="firstname" placeholder="Enter first name">
+                </div>
+                <div class="form-group">
+                    <label>Last Name:</label>
+                    <input type="text" class="form-control"  name="lastname" placeholder="Enter last name">
+                </div>
+                <div class="form-group">
+                    <label>Country:</label>
+                    <input type="text" class="form-control"  name="address" placeholder="Enter address">
+                </div>
+                <div class="form-group">
+                    <label>Bio:</label>
+                    <textarea type="text" class="form-control"  placeholder="Write a short bio" name="bio" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Username:*</label>
+                    <input type="text" class="form-control"  name="username" minlength="4" required placeholder="create a unique username">
+                    <small>Make sure your username has minimum 4 charachters</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password:*</label>
+                  <input type="password" class="form-control"name="password" id="pass" minlength="5" required placeholder="Password" required>
+                  <small>Make sure your password has minimum 5 charachters</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Confirm Password:*</label>
+                    <input type="password" class="form-control" name="Confirmpassword" id="confirmPass" required placeholder="Enter your new password again to confirm" required>
+                  </div>
+                
+                <button type="submit" class="btn btn-outline-success my-2 my-sm-0">Sign Up</button>
+                <small>* Required fields</small>
+              </form>
+        </div>
+    </main> 
+   <!-- FOOTER -->
+   <footer class="container fixed-bottom" >
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>&copy; 2020-2021 Photobomb, Inc. &middot; <a href="/about">About</a> &middot;</p>
+</footer>
+
+</body>
+</html>

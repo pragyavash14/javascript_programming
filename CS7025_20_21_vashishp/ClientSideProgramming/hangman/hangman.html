@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pragya's Hangman</title>
+    <meta name="Author" content="Pragya Vashishtha">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="hangman.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="hangman.css"/>
+
+</head>
+<body onload="placeBlankSpaces()">
+    <form name="myForm" class="box">
+        <div id="heading"> <img src="images/heading.PNG" alt="The name Hangman is spelled in different colours" class="head-img"></div>
+        <div id="word"> Guess the following word! <br>
+        (Hint: It's a character from Madagascar) </div>
+        <div id="blanks"> </div>
+        <div> <img id="hangman" alt="hangman image" src="images/6left.PNG"> </div>
+        <p>Number of chances left: <span id="chance_left"> xx </span> </p>
+        <p>Incorrect guesses: <span id="incorrect_guesses"> </span> </p>
+        <label>Type your alphabet here:</label>
+        <input type="text" maxlength="1" autocomplete="off" id="letter_input" name="letter_input">
+        <p id="error" class="error">&nbsp;</p>
+        <input type="button" value="Guess!" id="submit" onclick="checkErrors(); play()">
+    </form>
+
+</body>
+</html>
